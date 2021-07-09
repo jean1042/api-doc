@@ -9,9 +9,9 @@ from jinja2 import Environment, FileSystemLoader
 from pydash import _
 
 PROJECT = 'spaceone'
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TARGET_DIR = os.path.join(BASE_DIR, 'artifact')
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'template/markdown')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # Current directory path on linux machine
+TARGET_DIR = os.path.join(BASE_DIR, 'artifact')  # path of artifact
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'template/markdown') # path of template file  
 VERSION = os.path.join(BASE_DIR, 'VERSION')
 TEMPLATE_NAMES = ['single_pb_page.jinja', 'summary.jinja', 'readme.jinja', 'version_records.jinja']
 TEMPLATE_ENVIRONMENT = Environment(
