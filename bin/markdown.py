@@ -46,7 +46,7 @@ def _get_json_data(file_path):
 
 def _get_json_file_path(json_path):
     all_file_list = [proto_file for proto_file in
-                     glob.iglob(os.path.join(json_path, '**', '**', '*.json'), recursive=True)]
+                     glob.iglob(os.path.join(json_path, '**', '**', '*.json'), recursive=True)]  # 뭐하는건지 
     all_file_list.sort()
     return all_file_list
 
