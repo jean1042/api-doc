@@ -17,14 +17,14 @@ jobs:
         SERVICE: api
         PYPI_UPLOAD: true # upload pypi if this is true #지워도 됨
         # LOCATION points the parent directory
-        LOCATION_SETUP_PY: dist/python # optional. for pypi upload
+        LOCATION_SETUP_PY: dist/python # optional. for pypi upload  지워도 됨
         LOCATION_VERSION: . # the location for VERSION file (ex- . means the location of VERSION is ./VERSION)
         ARTIFACT_VERSION: ./artifact/json
         IS_SUDO: true
       run: |
         echo "SERVICE=$SERVICE" >> $GITHUB_ENV
         echo "PYPI_UPLOAD=$PYPI_UPLOAD" >> $GITHUB_ENV
-        echo "LOCATION_SETUP_PY=$LOCATION_SETUP_PY" >> $GITHUB_ENV
+        echo "LOCATION_SETUP_PY=$LOCATION_SETUP_PY" >> $GITHUB_ENV # 지워도 됨
         echo "LOCATION_VERSION=$LOCATION_VERSION" >> $GITHUB_ENV
         echo "IS_SUDO=$IS_SUDO" >> $GITHUB_ENV
         echo "ARTIFACT_VERSION=$ARTIFACT_VERSION" >> $GITHUB_ENV
