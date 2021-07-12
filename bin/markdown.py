@@ -398,7 +398,7 @@ def _build_a_reference(version_info):
     if (is_updated):
         ref['cur_version'] = version_info.get('artifact_version')
     else:
-        ref['cur_version'] = version_info.get('current_version')
+        ref['cur_version'] = version_info.get('current_version').   # cur_version에 그냥 넣기?
     return ref
 
 
