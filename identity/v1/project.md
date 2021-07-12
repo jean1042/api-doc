@@ -216,7 +216,7 @@ description:
 | 2 | project_id |string|✅| |
 | 3 | user_id |string|❌| |
 | 4 | role_id |string|❌| |
-| 5 | include_parent_member |string|❌| |
+| 5 | include_parent_member |bool|❌| |
 | 6 | domain_id |string|✅| |
 
 ### ProjectQuery
@@ -243,10 +243,11 @@ description:
 | 3 | resource_id |string | |
 | 4 | role_info |[RoleInfo](project.md#roleinfo) | |
 | 5 | project_info |[ProjectInfo](project.md#projectinfo) | |
-| 6 | labels |[google.protobuf.ListValue](https://developers.google.com/protocol-buffers/docs/reference/overview) | |
-| 7 | tags |[google.protobuf.Struct](https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/struct.proto) | |
-| 8 | domain_id |string | |
-| 9 | created_at |string | |
+| 6 | project_group_info |[ProjectGroupInfo](project.md#projectgroupinfo) | |
+| 7 | labels |[google.protobuf.ListValue](https://developers.google.com/protocol-buffers/docs/reference/overview) | |
+| 8 | tags |[google.protobuf.Struct](https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/struct.proto) | |
+| 9 | domain_id |string | |
+| 10 | created_at |string | |
 
 ### ProjectRoleBindingsInfo
 | No | Field | Type |  Description |
